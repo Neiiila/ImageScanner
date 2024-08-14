@@ -1,0 +1,57 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\HP\\source\\repos\\ImageScanner\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E031362E-F39D-45D5-9E49-4F3F1F6A8642}|ImageScanner\\ImageScanner.csproj|c:\\users\\hp\\source\\repos\\imagescanner\\imagescanner\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E031362E-F39D-45D5-9E49-4F3F1F6A8642}|ImageScanner\\ImageScanner.csproj|solutionrelative:imagescanner\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E031362E-F39D-45D5-9E49-4F3F1F6A8642}|ImageScanner\\ImageScanner.csproj|c:\\users\\hp\\source\\repos\\imagescanner\\imagescanner\\imagescanner.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E031362E-F39D-45D5-9E49-4F3F1F6A8642}|ImageScanner\\ImageScanner.csproj|solutionrelative:imagescanner\\imagescanner.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 248,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ImageScanner.csproj",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\ImageScanner\\ImageScanner\\ImageScanner.csproj",
+              "RelativeDocumentMoniker": "ImageScanner\\ImageScanner.csproj",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\ImageScanner\\ImageScanner\\ImageScanner.csproj",
+              "RelativeToolTip": "ImageScanner\\ImageScanner.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-13T23:03:26.043Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\ImageScanner\\ImageScanner\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "ImageScanner\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\ImageScanner\\ImageScanner\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "ImageScanner\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAuwBwAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T23:01:15.556Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "1pj2rIEifLx1ERMnjeKhWG5JlEBWMxU1osAMBFZ1CW0=",
+  "Source": "ImageScanner",
+  "BasePath": "_content/ImageScanner",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
