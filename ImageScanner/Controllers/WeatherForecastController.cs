@@ -1,4 +1,7 @@
+using ImageMagick;
 using Microsoft.AspNetCore.Mvc;
+using PdfSharpCore.Pdf;
+using PdfSharpCore.Pdf.IO;
 using Tesseract;
 
 namespace ImageScanner.Controllers
@@ -7,10 +10,10 @@ namespace ImageScanner.Controllers
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
-        // private static readonly string[] Summaries = new[]
-        // {
-        //     "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        // };
+        private static readonly string[] Summaries = new[]
+        {
+             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+         };
 
         private readonly ILogger<WeatherForecastController> _logger;
 
@@ -34,17 +37,39 @@ namespace ImageScanner.Controllers
         [HttpGet("/Scan")]
         public string ScanImage()
         {
-            // Initialize the Tesseract engine
             using var engine = new TesseractEngine(@"./tessdata", "eng", EngineMode.Default);
+            using var document = PdfReader.Open("Images/pdfToScan.pdf", PdfDocumentOpenMode.Import);
+            using var pdfPageStream = new MemoryStream();
+            var pdfPage = document.Pages[0];
 
-            // Load the image from file
-            using var img = Pix.LoadFromFile("Images/toScan.png");
+            var pdfDocument = new PdfDocument();
 
-            // Perform OCR on the image
-            using var page = engine.Process(img);
+            pdfDocument.AddPage(pdfPage);
+
+            pdfDocument.Save(pdfPageStream, false);
+
+            using var images = new MagickImageCollection();
+
+            images.Read(pdfPageStream, new MagickReadSettings
+            {
+                Density = new Density(300, 300),
+                FrameIndex = 0,
+                FrameCount = 1
+            });
+
+            using var image = images[0];
+            using var img = new MemoryStream();
+            image.Write(img, MagickFormat.Png);
+            img.Position = 0;
+
+            using var pix = Pix.LoadFromMemory(img.ToArray());
+
+
+            // using var img = Pix.LoadFromFile("Images/toScan.png");
+
+            using var page = engine.Process(pix);
             var text = page.GetText();
 
-            // Output the extracted text
             Console.WriteLine("Extracted Text:");
             Console.WriteLine(text);
             return ""; 
