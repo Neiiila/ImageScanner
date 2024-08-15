@@ -1,0 +1,28 @@
+name: CI Workflow
+on : 
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build : 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up dotnet
+        uses: actions/checkout@v2
+
+      - name: Setup .NET Core
+        uses: actions/setup-dotnet@v1 # this is a github action 
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Install dependencies
+        run: dotnet restore    # ensures that all needed dependencies are available
+
+      - name: Build
+        run: dotnet build --no-restore
+      - name: Test
+        run: dotnet test --no-build --verbosity normal
