@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ImageScanner")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+18d1407a3bcae077631e099c1b1ec62542773a20")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+49e25e7aa509a6caa822c7023840e5e38d04c62c")]
 [assembly: System.Reflection.AssemblyProductAttribute("ImageScanner")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ImageScanner")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
