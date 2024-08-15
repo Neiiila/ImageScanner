@@ -32,9 +32,10 @@
               "RelativeDocumentMoniker": "ImageScanner\\ImageScanner.csproj",
               "ToolTip": "C:\\Users\\HP\\source\\repos\\ImageScanner\\ImageScanner\\ImageScanner.csproj",
               "RelativeToolTip": "ImageScanner\\ImageScanner.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-13T23:03:26.043Z"
+              "WhenOpened": "2024-08-13T23:03:26.043Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -44,7 +45,7 @@
               "RelativeDocumentMoniker": "ImageScanner\\Controllers\\WeatherForecastController.cs",
               "ToolTip": "C:\\Users\\HP\\source\\repos\\ImageScanner\\ImageScanner\\Controllers\\WeatherForecastController.cs",
               "RelativeToolTip": "ImageScanner\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAuwBwAAABBAAAA",
+              "ViewState": "AQIAACYAAAAAAAAAAAAgwEEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-13T23:01:15.556Z",
               "EditorCaption": ""
